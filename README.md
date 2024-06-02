@@ -76,3 +76,7 @@ The objective of this test is to validate the candidate's ability to develop a m
 1. **Run the development server:**
    ```sh
    php artisan serve
+
+2. **(Optional) for genertae 100 contacts by seeder:**
+   ```sh
+  php artisan db:seed
