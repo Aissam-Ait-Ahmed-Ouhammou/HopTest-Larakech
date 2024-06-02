@@ -1,4 +1,4 @@
-# Recruitment Test Application
+# Recruitment Hop Larakech Test Application
 
 This project is a recruitment test for the Web Developer position. It involves developing a mini-application using the Laravel framework and MySQL database to manage contacts and companies.
 
@@ -40,5 +40,5 @@ The objective of this test is to validate the candidate's ability to develop a m
 
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/yourusername/mini-app.git
+   git clone https://github.com/Aissam-Ait-Ahmed-Ouhammou/HopTest-Larakech.git
    cd mini-app
