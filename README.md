@@ -85,3 +85,8 @@ The objective of this test is to validate the candidate's ability to develop a m
 
 - Push the code to a GitHub repository.
 - public URL for testing the mini-application: https://tech-spatium.online/
+
+## contact
+
+- Email : techspatium688@gmail.com
+- Phone: Abdelhafid - 0623668577
