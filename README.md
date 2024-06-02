@@ -61,3 +61,7 @@ The objective of this test is to validate the candidate's ability to develop a m
 5. **Generate application key:**
    ```sh
    php artisan key:generate
+
+5. **Run migrations:**
+   ```sh
+   php artisan migrate
