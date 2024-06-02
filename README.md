@@ -50,3 +50,10 @@ The objective of this test is to validate the candidate's ability to develop a m
 3. **Install JavaScript dependencies:**
    ```sh
    npm install
+
+4. **Set up environment variables:**
+   ```sh
+   cp .env.example .env
+Copy the .env.example file to .env and update the database configuration.
+
+
