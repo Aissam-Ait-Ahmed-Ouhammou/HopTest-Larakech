@@ -69,3 +69,10 @@ The objective of this test is to validate the candidate's ability to develop a m
 7. **Compile front-end assets using Tailwind CSS:**
    ```sh
    npm run dev
+
+
+## usage
+
+1. **Run the development server:**
+   ```sh
+   php artisan serve
