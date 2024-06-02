@@ -80,3 +80,8 @@ The objective of this test is to validate the candidate's ability to develop a m
 2. **(Optional) for genertae 100 contacts by seeder:**
    ```sh
    php artisan db:seed
+
+## deliverables
+
+- Push the code to a GitHub repository.
+- public URL for testing the mini-application: https://tech-spatium.online/
