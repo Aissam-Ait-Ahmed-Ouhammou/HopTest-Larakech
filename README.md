@@ -52,7 +52,9 @@ The objective of this test is to validate the candidate's ability to develop a m
    npm install
 
 4. **Set up environment variables:**
+   
    Copy the .env.example file to .env and update the database configuration.
+   
    ```sh
    cp .env.example .env
 
