@@ -62,6 +62,10 @@ The objective of this test is to validate the candidate's ability to develop a m
    ```sh
    php artisan key:generate
 
-5. **Run migrations:**
+6. **Run migrations:**
    ```sh
    php artisan migrate
+
+7. **Compile front-end assets using Tailwind CSS:**
+   ```sh
+   npm run dev
