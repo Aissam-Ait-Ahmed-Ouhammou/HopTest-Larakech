@@ -20,9 +20,15 @@ class ContactController extends Controller
         if ($validator->fails()) {
             return response()->json(['status' => 333, 'errors' => $validator->errors()]);
         }
-
+        if (Contact::where(['nom' =>  ucwords(strtolower($request->nom)), 'prenom' => ucwords(strtolower($request->prenom))])->exists()) {
+            if (!$request->has('doublon')) {
+                return response()->json(['status' => 888, 'info' => 'Contact Exists!']);
+            }
+        }
         $this->createOrUpdateContact(new Contact(), $request);
-
+        if ($request->has('doublon')) {
+            return back();
+        }
         return response()->json(['status' => true, 'success' => 'Contact created successfully!']);
     }
 
@@ -44,8 +50,18 @@ class ContactController extends Controller
         }
 
         $contact = Contact::findOrFail($request->id);
-        $this->createOrUpdateContact($contact, $request);
 
+        $exQuery = Contact::where(['nom' =>  ucwords(strtolower($request->nom)), 'prenom' => ucwords(strtolower($request->prenom))]);
+        if ($exQuery->count() >= 1 && ucwords(strtolower($request->nom)) != $contact->nom &&  ucwords(strtolower($request->prenom)) !=  $contact->prenom) {
+            if (!$request->has('doublon')) {
+                return response()->json(['status' => 888, 'info' => 'Contact Exists!']);
+            }
+        }
+
+        $this->createOrUpdateContact($contact, $request);
+        if ($request->has('doublon')) {
+            return back();
+        }
         return response()->json(['status' => true, 'success' => 'Contact updated successfully!']);
     }
 
